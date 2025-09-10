@@ -15,22 +15,23 @@ async function fetchUserData() {
     console.log(response);
     let firstUser = response[0];
     console.log(firstUser);
-    name1.textContent = firstUser.name;
-    user1.textContent = firstUser.username;
-    mail1.textContent = firstUser.email;
+    name1.textContent = firstUser.name.toUpperCase();
+    user1.textContent = firstUser.username.toUpperCase();
+    mail1.textContent = firstUser.email.toLowerCase();
     let seventhUser = response[7];
     console.log(seventhUser);
-    name2.textContent = seventhUser.name;
-    user2.textContent = seventhUser.username;
-    mail2.textContent = seventhUser.email;
-    let lastUser = response[9];
+    name2.textContent = seventhUser.name.toUpperCase();
+    user2.textContent = seventhUser.username.toUpperCase();
+    mail2.textContent = seventhUser.email.toLowerCase();
+    let lastUser = response[response.length -1];
     console.log(lastUser);
-    name3.textContent = lastUser.name;
-    user3.textContent = lastUser.username;
-    mail3.textContent = lastUser.email;
+    name3.textContent = lastUser.name.toUpperCase();
+    user3.textContent = lastUser.username.toUpperCase();
+    mail3.textContent = lastUser.email.toLowerCase();
   } catch (error) {
     console.log(error);
   }
 }
+
 
 fetchUserData();
