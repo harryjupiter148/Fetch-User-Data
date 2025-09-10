@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  main {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #card {
+      background: rgb(146, 134, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+      height: 250px;
+      line-height: 40px;
+      padding: 10px;
+      border: none;
+      border-radius: 15px;
+
+      &:first-child {
+        background: rgb(255, 134, 146);
+      }
+
+      &:last-child {
+        background: rgb(134, 255, 146);
+      }
+
+      span {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+}
