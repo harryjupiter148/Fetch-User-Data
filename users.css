@@ -40,3 +40,21 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  body {
+    main {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      gap: 20px;
+
+      #card {
+        width: 80%;
+        text-wrap: wrap;
+      }
+    }
+  }
+}
